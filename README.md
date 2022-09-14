@@ -29,7 +29,7 @@ cortest.bartlett(creme_dental_exemplo1)
 # a matriz de correlação.
 KMO(creme_dental_exemplo1)
 
-fit<-princomp(creme_dental_exemplo1,cor=TRUE)
+fit <- princomp(creme_dental_exemplo1,cor=TRUE)
 fit
 
 summary(fit)
@@ -38,11 +38,11 @@ summary(fit)
 screeplot(fit)
 
 
-PCAdente<-principal(creme_dental_exemplo1, nfactors=2,
+PCAdente <- principal(creme_dental_exemplo1, nfactors=2,
                     n.obs=30,rotate="none", scores=TRUE)
 PCAdente
 
-PCAdentevarimax<-principal(creme_dental_exemplo1, nfactors=2,
+PCAdentevarimax <- principal(creme_dental_exemplo1, nfactors=2,
                            n.obs=30,rotate="varimax",scores=TRUE)
 PCAdentevarimax
 
